@@ -39,6 +39,7 @@ import { SwelcomeComponent } from './components/swelcome/swelcome.component';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
+      { path: 'swelcome', component: SwelcomeComponent },
       { path: 'shop', component: ShopComponent },
       { path: 'sportfolio', component: SportfolioComponent },
       { path: 'sabout', component: SaboutComponent },

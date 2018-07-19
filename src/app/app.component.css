@@ -22,7 +22,8 @@ div#onScreen {
     "footSpace";
 }
 .smithing {
-  background-color: #504640;
+  /* background-color: #504640; */
+  background-color: #383838;
   background-image: url('../assets/svgs/gridpattern.svg');
   background-size: 3px;
   margin: 0;
@@ -50,7 +51,7 @@ nav {
 nav a {
   text-decoration: none;
   padding: .5rem 1rem;
-  color: rgb(250, 236, 217);
+  color: rgb(248, 238, 225);
   font-weight: 400;
   border-right: solid 1px #f19c22;
   transition: color, 550ms;
@@ -102,7 +103,7 @@ footer p {
 
 /* Media Breaks */
 
-@media screen and (max-width: 60em) {
+@media only screen and (max-width: 60em) {
   header{
     max-height: 300px;
     grid-template-rows: auto 3rem;
@@ -119,17 +120,5 @@ footer p {
   }
   img#fe {
     margin: auto;
-  }
-
-  section#smithing {
-    background: url(/images/blacksmithing.svg) no-repeat center;
-    background-size: contain;
-    grid-template-columns: auto;
-  }
-  
-  section#coding {
-    background: url(/images/coding.svg) no-repeat center;
-    background-size: contain;
-    grid-template-columns: auto;
   }
 }
