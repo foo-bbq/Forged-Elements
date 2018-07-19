@@ -1,9 +1,41 @@
-<div id="welcomeWrap">
-  <div id="jumboWrap">
-    <img src="../../../assets/images/jumbotron.jpg" alt="">
-    <div id="jumboTitle">
-      <h1>forged elements</h1>
-    </div>
+<div id="smithingWrap">
 
+  <div id="headSpace">
+
+    <header class="smithingHeader">
+      <a [routerLink]="['/swelcome']" id="navTab2">
+        <img id="navTabImg2" src="../assets/svgs/smithing tab reflected.svg" alt="">
+      </a>
+
+      <a [routerLink]="['/swelcome']" id="logo">
+        <img id="fe" src="../assets/svgs/Fe.svg" alt="">
+      </a>
+
+      <nav id="navLinks">
+        <a [routerLink]="['./sportfolio']">Portfolio</a>
+        <a [routerLink]="['./sabout']">About</a>
+        <a [routerLink]="['./shop']">Shop</a>
+        <a [routerLink]="['./custom']" id="lastNav">Custom</a>
+      </nav>
+
+
+
+      <a [routerLink]="['/cwelcome']" id="navTab">
+        <img id="navTabImg" src="../assets/svgs/coding tab.svg" alt="">
+      </a>
+    </header>
+    
   </div>
+  
+  <div id="viewSpace">
+
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer id="footSpace">
+    <p style="font-size: .8rem;">Copyright © 2018 Forged Elements. All rights reserved.</p>
+  </footer>
+
+
+
 </div>

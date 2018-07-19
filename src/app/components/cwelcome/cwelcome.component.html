@@ -1,3 +1,42 @@
-<p>
-  cwelcome works!
-</p>
+<div id="codingWrap">
+
+    <div id="headSpace">
+  
+      <header class="codingHeader">
+        <a [routerLink]="['/swelcome']" id="navTab2">
+          <img id="navTabImg2" src="../assets/svgs/smithing tab brown.svg" alt="">
+        </a>
+  
+        <a [routerLink]="['/cwelcome']" id="logo">
+          <img id="fe" src="../assets/svgs/Fe brown.svg" alt="">
+        </a>
+  
+        <nav id="navLinks">
+          <a [routerLink]="['./cportfolio']">Portfolio</a>
+          <a [routerLink]="['./cabout']">About</a>
+          <a [routerLink]="['./services']">Services</a>
+          <a [routerLink]="['./contact']" id="lastNav">Contact</a>
+        </nav>
+  
+  
+  
+        <a [routerLink]="['/cwelcome']" id="navTab">
+          <img id="navTabImg" src="../assets/svgs/coding tab brown.svg" alt="">
+        </a>
+      </header>
+      
+    </div>
+    
+    <div id="viewSpace">
+  
+      <router-outlet></router-outlet>
+    </div>
+  
+    <footer id="footSpace">
+      <p style="font-size: .8rem;">Copyright © 2018 Forged Elements. All rights reserved.</p>
+    </footer>
+  
+  
+  
+  </div>
+  
