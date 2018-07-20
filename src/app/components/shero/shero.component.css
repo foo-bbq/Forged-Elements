@@ -1,8 +1,16 @@
 #jumboWrap {
   position: relative;
   width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+#jumbotron {
+  overflow: hidden;
+  max-height: 600px;
   border-top: 1rem solid #f19c22;
   border-bottom: 1rem solid #f19c22;
+  margin-bottom: 1rem;
 }
 
 #jumboTitle {
@@ -11,23 +19,79 @@
   height: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
   color: #f19c22;
   text-align: center;
 }
 
-#jumboWrap h1 {
+#jumbotron h1 {
   padding-top: 20%;
   font-size: 6em;
 }
-#jumboWrap img {
+#jumbotron img {
   width: 100%;
+  bottom: 0;
+}
+#heroWrap {
+  max-width: 1200px;
+}
+.heroBox {
+  padding: 1rem 2rem;
+  max-width: 750px;
+  border-right: .2rem solid #f19c22;
+}
+.heroBoxR {
+  padding: 1rem 2rem;
+  max-width: 800px;
+  border-left: .2rem solid #f19c22;
+  text-align: end;
+  margin-left: auto;
+}
+.heroBoxLast {
+  padding: 1rem 2rem;
+  max-width: 800px;
+  border-left: .2rem solid #f19c22;
+  text-align: end;
+  margin-left: auto;
+  transform: font-size 600ms;
+}
+.heroBoxLast:hover {
+  font-size: 4rem;
 }
 
+.jumboHero {
+  color: #f19c22;
+  font-family: "Flamenco", sans-serif;
+  font-size: 3rem;
+  display: inline;
+}
+.jumboText {
+  display: inline;
+  color: white;
+  line-height: 2.5;
+}
+@media only screen and (min-width: 1200px) {
+  #heroWrap {
+    min-width: 1200px;
+    margin: auto;
+  }
+
+}
 @media only screen and (max-width: 40em) {
   #jumboWrap h1 {
     padding-top: 15%;
     font-size: 3em;
+  }
+  .jumboHero {
+    font-size: 2em;
+  }
+  .jumboText {
+    line-height: 2rem;
+  }
+  .heroBox {
+    border-right: .6rem solid #f19c22;
+  }
+  .heroBoxR {
+    border-left: .6rem solid #f19c22;
   }
 }
