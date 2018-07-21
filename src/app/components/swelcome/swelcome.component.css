@@ -8,6 +8,9 @@
   grid-area: footSpace;
   
 }
+#superWrap {
+  height: 100%;
+}
 div#smithingWrap {
   /* background-color: #504640; */
   background-color: #383838;
