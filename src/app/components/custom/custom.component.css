@@ -1,11 +1,32 @@
 #customWrap {
-  padding: 1em;
+  padding: 1rem 2rem;
   color: rgb(248, 238, 225);
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2rem;
+  border-left: .2rem solid #f19c22;
 }
 
 h1 {
   color: #f19c22;
   font-size: 3em;
   text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+  line-height: 2rem;
+}
+
+li:before {
+  content: "۞";
+  padding-right: 5px;
 }
 

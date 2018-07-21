@@ -1,0 +1,25 @@
+#portfolioWrap {
+  padding: 2rem;
+}
+h1 {
+  color: #504640;
+  font-size: 2em;
+  text-align: center;
+}
+img {
+}
+#imageRowWrap {
+  display:grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 1rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+.imgWrap {
+  border-left: .3rem solid #504640;
+  overflow: hidden;
+  transition: border 600ms;
+}
+.imgWrap:hover {
+  border-left: 1rem solid #f19c22;
+}

@@ -7,7 +7,7 @@
 
 #jumbotron {
   overflow: hidden;
-  max-height: 600px;
+  max-width: 1200px;
   border-top: 1rem solid #f19c22;
   border-bottom: 1rem solid #f19c22;
   margin-bottom: 1rem;
@@ -70,13 +70,13 @@
   color: white;
   line-height: 2.5;
 }
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   #heroWrap {
     min-width: 1200px;
     margin: auto;
   }
 
-}
+} */
 @media only screen and (max-width: 40em) {
   #jumboWrap h1 {
     padding-top: 15%;

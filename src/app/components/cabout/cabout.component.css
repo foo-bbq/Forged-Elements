@@ -1,0 +1,107 @@
+#headshotWrap {
+  padding: 1rem;
+  border-radius: 50%;
+  shape-outside: border-box;
+  width: 70%;
+  max-width: 600px;
+  position: relative;
+}
+
+.headshot {
+  border: .2rem solid #504640;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+#titleWrap {
+  position: relative;
+  grid-area: title;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+
+h1 {
+  color: #504640;
+  font-size: 5em;
+  text-align: center;
+}
+p {
+  color: #504640;
+}
+
+#title {
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+}
+
+#profilePic {
+  width: 100%;
+  max-width: 1200px;
+  border: .2rem solid #1d1d1d;
+}
+
+
+#aboutWrap {
+  padding: 2rem;
+}
+
+.imgWrapR,
+.imgWrapL {
+  padding: 1.5rem;
+  border-radius: 50%;
+  shape-outside: border-box;
+  max-width: 600px;
+  position: relative;
+}
+
+.imgWrapL {
+  float: left;
+}
+.imgWrapR {
+  float: right;
+}
+
+
+.imageBorder {
+  max-width: 100%;
+  border: .1rem solid #1d1d1d;
+  border-radius: 100%;
+}
+
+@media only screen and (max-width: 60em) {
+  #title {
+    bottom: 3rem;
+    left: 4rem;
+  }
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .imgWrapL,
+  .imgWrapR {
+    display: inline;
+    width: 100%;
+    shape-outside: none;
+  }
+  #title {
+    bottom: 5%;
+    left: 0;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  #oz {
+    grid-area: oz;
+  }
+  #ozp {
+    grid-area: ozp;
+  }
+  #chunkWrap1Inner {
+    display: grid;
+    grid-template-areas: "ozp" "oz"
+  }
+}
