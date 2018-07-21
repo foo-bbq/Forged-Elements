@@ -3,11 +3,15 @@
 }
 h1 {
   color: #504640;
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
 }
-img {
+
+p {
+  color: #504640;
+  text-align: center;
 }
+
 #imageRowWrap {
   display:grid;
   grid-template-columns: repeat(3, 30%);
@@ -16,6 +20,7 @@ img {
   margin-top: 3rem;
 }
 .imgWrap {
+
   border-left: .3rem solid #504640;
   overflow: hidden;
   transition: border 600ms;

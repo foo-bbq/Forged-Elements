@@ -22,8 +22,9 @@
 
 h1 {
   color: #504640;
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
+  padding-bottom: 2rem;
 }
 p {
   color: #504640;

@@ -4,17 +4,20 @@
   max-width: 800px;
   margin: auto;
 }
+
 #contactInnerWrap {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 1rem;
   justify-content: space-between;
 }
+
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
+
 #infoWrap {
   display: grid;
   grid-template-rows: repeat(4 auto);
@@ -24,9 +27,7 @@ h1 {
   border-right: .2rem solid #f19c22;
   padding: 1rem;
 }
-#flavor{
 
-}
 .info{
   font-size: 1.5rem;
   font-weight: 600;

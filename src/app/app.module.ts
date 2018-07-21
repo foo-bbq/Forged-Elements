@@ -56,7 +56,7 @@ import { SheroComponent } from './components/shero/shero.component';
           { path: 'cabout', component: CaboutComponent },
           { path: 'services', component: ServicesComponent },
           { path: 'contact', component: ContactComponent },
-          { path: '', redirectTo: 'chero', pathMatch: 'full' }
+          { path: '', redirectTo: 'cabout', pathMatch: 'full' }
         ]
       },
       { path: '', redirectTo: 'swelcome', pathMatch: 'full' },
