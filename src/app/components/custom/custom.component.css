@@ -1,9 +1,11 @@
 #customWrap {
-  padding: 1rem 2rem;
   color: rgb(248, 238, 225);
   max-width: 800px;
   margin: auto;
   margin-top: 2rem;
+}
+#customInnerWrap {
+  padding: 1rem 2rem;
   border-left: .2rem solid #f19c22;
 }
 
@@ -17,6 +19,7 @@ ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+  columns: 2;
 }
 
 li {
@@ -30,3 +33,56 @@ li:before {
   padding-right: 5px;
 }
 
+#contactWrap {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+#contactInnerWrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1rem;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#infoWrap {
+  display: grid;
+  grid-template-rows: repeat(4 auto);
+  justify-content: end;
+  text-align: end;
+  max-width: 800px;
+  border-right: .2rem solid #f19c22;
+  padding: 1rem;
+}
+
+.info{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#email {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: font-size 600ms;
+}
+#email:hover {
+  font-size: 1.6rem;
+}
+#contact {
+  max-width: 200px;
+  margin-left: auto;
+}
+/* 
+@media screen and (max-width: 60em) {
+  #contactWrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 auto);
+  }
+} */
