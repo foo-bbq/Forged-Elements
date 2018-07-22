@@ -2,19 +2,11 @@
 @import "~font-awesome/css/font-awesome.min.css";
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Comfortaa|Flamenco|Montserrat');
 
-/* 
-Custom Font Syntax:
-font-family: 'Comfortaa', sans-serif;
-font-family: 'Flamenco', cursive;
-font-family: 'Alegreya', serif; 
-*/
-
-
-body, html {
+html {
   height: 100%;
-  
 }
 body {
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 

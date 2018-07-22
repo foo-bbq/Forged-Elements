@@ -1,35 +1,34 @@
-#headSpace {
-  grid-area: headSpace;
-}
-#viewSpace {
-  grid-area: viewSpace;
-}
-#footSpace {
-  grid-area: footSpace;
-  
-}
 #superWrap {
   height: 100%;
+  background-color: #1d1d1d;
 }
 div#smithingWrap {
   /* background-color: #504640; */
   background-color: #383838;
   background-image: url('../../../assets/svgs/gridpattern.svg');
   background-size: 3px;
-  min-height: 100%;
+  min-height: 100vh;
   max-width: 1200px;
   margin: auto;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   grid-template-areas: 
-    "headSpace"
-    "viewSpace"
+  "headSpace"
+  "viewSpace"
     "footSpace";
-}
-
-/* header stuff */
-
+  }
+  #headSpace {
+    grid-area: headSpace;
+  }
+  #viewSpace {
+    grid-area: viewSpace;
+  }
+  #footSpace {
+    grid-area: footSpace;
+  }
+  /* header stuff */
+  
 header {
   background: linear-gradient(3deg, #000000, #1d1d1d, #383838);
   width: 100%;
@@ -105,9 +104,6 @@ footer p {
   #smithingWrap {
     border-right: .2rem solid #F19C22;
     border-left: .2rem solid #F19C22;
-  }
-  #superWrap {
-    background-color: #1d1d1d;
   }
 }
 @media only screen and (max-width: 60em) {
