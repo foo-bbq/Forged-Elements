@@ -32,7 +32,6 @@ div#smithingWrap {
 header {
   background: linear-gradient(3deg, #000000, #1d1d1d, #383838);
   width: 100%;
-  /* position: sticky; */
   display: grid;
   grid-template-columns: 20% 1fr 20%;
   grid-template-areas: "logo navLinks navTab";
