@@ -37,30 +37,30 @@ import { SheroComponent } from './components/shero/shero.component';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: 'swelcome',
+      { path: 'ironworks',
         component: SwelcomeComponent,
         children: [
-          { path: 'shero', component: SheroComponent },
+          { path: 'welcome', component: SheroComponent },
           { path: 'shop', component: ShopComponent },
-          { path: 'sportfolio', component: SportfolioComponent },
-          { path: 'sabout', component: SaboutComponent },
-          { path: 'custom', component: CustomComponent },
-          { path: '', redirectTo: 'shero', pathMatch: 'full' }
+          { path: 'portfolio', component: SportfolioComponent },
+          { path: 'about', component: SaboutComponent },
+          { path: 'contact', component: CustomComponent },
+          { path: '', redirectTo: 'welcome', pathMatch: 'full' }
         ]
       },
-      { path: 'cwelcome',
+      { path: 'codesmith',
         component: CwelcomeComponent,
         children: [
-          { path: 'chero', component: CheroComponent },
-          { path: 'cportfolio', component: CportfolioComponent },
-          { path: 'cabout', component: CaboutComponent },
+          { path: 'welcome', component: CheroComponent },
+          { path: 'portfolio', component: CportfolioComponent },
+          { path: 'about', component: CaboutComponent },
           { path: 'services', component: ServicesComponent },
           { path: 'contact', component: ContactComponent },
-          { path: '', redirectTo: 'cabout', pathMatch: 'full' }
+          { path: '', redirectTo: 'about', pathMatch: 'full' }
         ]
       },
-      { path: '', redirectTo: 'swelcome', pathMatch: 'full' },
-      { path: '**', redirectTo: 'swelcome', pathMatch: 'full' }
+      { path: '', redirectTo: 'ironworks', pathMatch: 'full' },
+      { path: '**', redirectTo: 'ironworks', pathMatch: 'full' }
     ])
   ],
   providers: [],
