@@ -124,4 +124,8 @@ footer p {
     margin: auto;
   }
 }
-
+@media only screen and (max-width: 25em) {
+  nav a{
+    font-size: .75rem;
+  }
+}

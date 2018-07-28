@@ -1,6 +1,7 @@
 #portfolioWrap {
   padding: 2rem;
 }
+
 h1 {
   color: #504640;
   font-size: 4em;
@@ -13,18 +14,35 @@ p {
 }
 
 #imageRowWrap {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-gap: 1rem;
   margin: auto;
   margin-top: 3rem;
 }
-.imgWrap {
 
+.imgWrap {
   border-left: .3rem solid #504640;
   overflow: hidden;
   transition: border 600ms;
 }
+
 .imgWrap:hover {
   border-left: 1rem solid #f19c22;
+}
+
+@media only screen and (max-width: 40em) {
+  #imageRowWrap {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 30%);
+  }
+  .imgWrap img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  h1 {
+    font-size: 2rem;
+  }
 }

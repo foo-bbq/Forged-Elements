@@ -87,16 +87,9 @@
   border-bottom: .2rem solid #f19c22;
 }
 
-/* @media only screen and (min-width: 1200px) {
-  #heroWrap {
-    min-width: 1200px;
-    margin: auto;
-  }
-
-} */
 @media only screen and (max-width: 40em) {
   #jumboWrap h1 {
-    padding-top: 35%;
+    padding-top: 25%;
     font-size: 3em;
   }
   /* .jumboHero {
@@ -111,4 +104,18 @@
   .heroBoxR {
     border-left: .6rem solid #f19c22;
   }
+}
+@media only screen and (max-width: 25em) {
+ #jumboWrap h1 {
+   padding-top: 20%;
+ }
+ .heroBox, .heroBoxR, .heroBoxLast {
+   padding: .75rem;
+ }
+ .jumboHero {
+   font-size: 2rem;
+ }
+ #story:hover {
+   font-size: 2rem;
+ }
 }
