@@ -46,7 +46,7 @@ export class SportfolioComponent implements OnInit {
     },
     {
       'imageUrl': '../../../assets/images/portfoliopics/portfolio (11).jpg',
-      'caption': 'Setting rivets on a coffee table at Orion Forge.'
+      'caption': 'Setting tenons on a coffee table at Orion Forge.'
     },
     {
       'imageUrl': '../../../assets/images/portfoliopics/portfolio (12).jpg',
